@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 const Counter = () => {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0); // this setCount takes a call back funtion for updating a value of counte
 
     // for increament value and you can increament upto 20
     function addValue() {
@@ -12,6 +12,7 @@ const Counter = () => {
         }
         else{
             setCount(count + 1);
+            // setCount((count) => count + 1);
         }
     }
 
