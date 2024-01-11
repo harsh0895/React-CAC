@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 
 const Bgchanger = () => {
     const [color, setColor] = useState("blue")
+    const [text, setText ]= useState('white')
   return (
     <div className='w-full h-screen duration-200' style={{backgroundColor: color}}>
-      <h1 className='flex flex-wrap justify-center' style={{
-        fontFamily: "cursive", fontSize: 25, fontWeight: 800, 
+      <h1 className='flex flex-wrap justify-center text-black' style={{
+        fontFamily: "cursive", fontSize: 25, fontWeight: 800,  color: color === "black" ? "white" : "black"
       }}>{color.toUpperCase()}</h1>
     <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
       <div className='flex flex-wrap justify-center gap-3 shadow-lg bg-white px-4 py-2 rounded-3xl'>
