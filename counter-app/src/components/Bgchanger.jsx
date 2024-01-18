@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 const Bgchanger = () => {
     const [color, setColor] = useState("blue")
-    const [text, setText ]= useState('white')
   return (
     <div className='w-full h-screen duration-200' style={{backgroundColor: color}}>
       <h1 className='flex flex-wrap justify-center text-black' style={{
